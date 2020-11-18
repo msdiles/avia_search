@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.flights-list{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 300px;
+  margin-top: 1rem;
+  background: $backMain;
+  padding-bottom: 2rem;
+}
+
+.more{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  button{
+    padding: 0 3rem;
+    cursor: pointer;
+  }
+}

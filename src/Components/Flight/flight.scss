@@ -1,0 +1,138 @@
+@import "../../styles/variables";
+
+.flight {
+  width: 100%;
+  padding-bottom: 1.5rem;
+
+  span{
+    white-space: nowrap;
+  }
+}
+
+.flight-title {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  background: $info;
+  color: $backMain;
+
+  .airline-logo {
+    padding: 0.5rem;
+  }
+
+  .title {
+    text-align: right;
+  }
+
+  .title-message {
+    font-size: 10px;;
+  }
+
+}
+
+.one-way-flight {
+  padding-bottom: 0.5rem;
+}
+
+.destinations {
+  display: flex;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+
+  .time {
+    font-size: 1.1rem;
+  }
+
+  &:first-child {
+    margin-right: 0.5rem;
+  }
+
+  &:last-child {
+    margin-left: 0.5rem;
+  }
+}
+
+
+.transfer {
+  color: $interactive;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 30%;
+    margin-right: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(50%);
+  }
+  &.empty:before{
+    width: 45%;
+    margin-right: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 30%;
+    margin-left: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(50%);
+  }
+  &.empty:after{
+    width: 45%;
+    margin-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+  }
+}
+
+.airline {
+  padding-left: 1rem;
+  font-size: 0.85rem;
+}
+
+
+.flight-there {
+  border-bottom: 2px solid $info;
+}
+
+
+.button {
+  button {
+    width: 100%;
+    padding: 0.5rem;
+    color: $backMain;
+    background-color: $interactive;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.side-color {
+  color: $info;
+  font-size: 0.9rem;
+}
+
+.subtext{
+  margin-left: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.arrow{
+  margin: 0 0.5rem;
+}
+
+.right-time{
+  margin-left: 0.2rem;
+}
