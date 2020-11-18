@@ -91,7 +91,7 @@ const Flight = ({flight}: IProps) => {
         }
         <div className="airline">
           <p>
-            Рейс выполняется:
+            Рейс выполняется:&nbsp;
             {flight.flight.legs[0].segments.last().operatingAirline?.caption || flight.flight.carrier.caption}
           </p>
         </div>
