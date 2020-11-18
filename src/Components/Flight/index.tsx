@@ -29,7 +29,7 @@ const Flight = ({flight}: IProps) => {
       <div className="flight-title">
         <p className="airline-logo">{flight.flight.carrier.caption}</p>
         <div>
-          <p className="title">{flight.flight.price.total.amount}</p>
+          <p className="title">{flight.flight.price.total.amount} &#8381;</p>
           <p className="title-message">Стоимость для одного взрослого пасажира</p>
         </div>
       </div>
@@ -84,7 +84,10 @@ const Flight = ({flight}: IProps) => {
         {flight.flight.legs[0].segments.length - 1 > 0 ?
           (<div className="transfer">
             <p>{flight.flight.legs[0].segments.length - 1} пересадка</p>
-          </div>) : null
+          </div>) :
+          (<div className="transfer empty">
+            <p></p>
+          </div>)
         }
         <div className="airline">
           <p>
@@ -150,7 +153,7 @@ const Flight = ({flight}: IProps) => {
         }
         <div className="airline">
           <p>
-            Рейс выполняется:
+            Рейс выполняется:&nbsp;
             {flight.flight.legs.last().segments.last().operatingAirline?.caption || flight.flight.carrier.caption}
           </p>
         </div>

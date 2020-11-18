@@ -23,6 +23,7 @@
   }
 
   .title {
+    padding-top: 0.2rem;
     text-align: right;
   }
 
@@ -64,7 +65,7 @@
 .transfer {
   color: $interactive;
   text-align: center;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
 

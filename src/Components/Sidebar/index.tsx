@@ -107,7 +107,7 @@ const Sidebar = () => {
                 onChange={(e) => airlinesHandler(airline.uid, e)}
               />
               <label htmlFor={`airline${airline.uid}`}> - {airline.caption} </label>
-              <p className="price"> &nbsp;от {airline.minPrice}</p>
+              <p className="price"> &nbsp;от {airline.minPrice} р.</p>
             </div>
           ))}
         </div>
