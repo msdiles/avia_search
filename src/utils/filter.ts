@@ -31,7 +31,7 @@ const filterPriceTo = (flight: IFlight, priceTo: number) => {
 }
 
 const filterPriceFrom = (flight: IFlight, priceFrom: number) => {
-  return +flight.flight.price.total.amount > priceFrom
+  return +flight.flight.price.total.amount >= priceFrom
 }
 
 const filterCountTransfer = (flight: IFlight, countTransfer: number[]) => {
